@@ -6,6 +6,7 @@ const Auth = () => {
   const auth = useContext(AuthContext);
   console.log(auth.status);
   return (
+    // hoip
     <div>
       <h1>Click on the checkbox to get authenticated</h1>
       {auth.status ? (
