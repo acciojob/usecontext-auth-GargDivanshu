@@ -1,9 +1,9 @@
 
 import React, { useContext } from "react";
-import AuthContext from "./AuthContext";
+import authContext from "./Authcontext";
 
 const Auth = () => {
-  const auth = useContext(AuthContext);
+  const auth = useContext(authContext);
   console.log(auth.status);
   return (
     // hoip
