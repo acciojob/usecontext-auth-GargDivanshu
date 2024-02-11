@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './../styles/App.css';
 import Auth from "./Auth";
-import AuthContext from "./Authcontext";
+import authContext from "./Authcontext";
 
 const App = () => {
   //using the state to dynamicallly pass the values to the context
@@ -13,9 +13,9 @@ const App = () => {
   };
   return (
     <React.Fragment>
-      <AuthContext.Provider value={{ status: authstatus, login: login }}>
+      <authContext.Provider value={{ status: authstatus, login: login }}>
         <Auth />
-      </AuthContext.Provider>
+      </authContext.Provider>
     </React.Fragment>
   );
 };
